@@ -1,0 +1,532 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* @group General Text Resets
+============================================== */
+img, div, input, ul, li, a { 
+	behavior: url("../images/iepngfix.htc") ;
+}
+
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, /*img,*/ ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+html{
+	height: 100%;
+}
+
+
+body {
+
+	background-color: #ffffff;
+	margin:0;
+	height: 100%;
+	line-height: 1;
+	
+	font-family: Arial, Helvetica; 
+	font-size: 12px; 
+	color: #5a5b5e;
+	line-height: normal;
+	font-weight: normal;
+}
+
+/*default navigation*/
+A:link, A:visited {
+	text-decoration: none; 
+	color: #134a85;
+}
+
+
+A:active, A:hover {
+	text-decoration: underline; 
+	color: #00a0c6;
+}
+
+	
+.btn{
+	background-color: #134a85;
+	color: #ffffff;
+	border: 0px;
+	height: 1.9em;
+	padding-left: 8px;
+	padding-right: 8px;
+
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #00a0c6;
+}
+
+* { -moz-outline: 0; }
+
+a img { border: none; }
+
+
+hr {
+	clear: both;
+	height: 0;
+	margin: 0 0 1em;
+	border: 1px solid #b2b4b7;
+	border-width: 1px 0 0;
+}
+
+/* @end General Text Resets
+----------------------------------------- */
+
+/* @group Lists (OL, UL)
+============================================== */
+
+ul { margin: 0 0 1em 4em; }
+
+ol { margin-left: 5em; }
+
+p + ul, p + ol { margin-top: -0.5em; } /* get lists below paragraphs closer to the paragraph */
+
+li ul, li ol { margin-top: .5em; margin-bottom: .75em; } /* lists inside of LI's need room to breathe on top and don't need as much space on bottom */
+
+li { margin: 0 0 .5em; }
+
+/* change bullet style when nesting lists */
+ul { list-style: disc; }
+ul ul { list-style: circle; }
+ul ul ul { list-style: square; }
+ol { list-style: decimal; }
+ol ol, ol.alpha { list-style: lower-alpha; } /* ol.alpha is optional in fckeditor */
+ol ol ol { list-style: lower-roman; }
+
+p {
+	font-family: Arial, Helvetica; 
+	font-size: 12px; 
+	color: #5a5b5e; 
+	line-height: normal;
+	font-weight: normal;		
+}
+
+.whiteFont{
+	font-family: Helvetica, Arial; 
+	font-size: 18px; 
+	color: #ffffff; 
+	line-height: 24px;
+	font-weight: normal;
+}
+
+blockquote, q { 
+	padding-top: 0; 
+	padding-bottom: 0;
+	padding-right: 20px;
+	padding-left: 20px;
+	quotes: none; 
+}
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+blockquote p {} /* Reminder to always include blockquote content in a <p> */
+blockquote div cite { font-style: italic; }
+
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+/* @end Lists (OL, UL)
+----------------------------------------- */
+
+/* @group Headings (H1-H6)
+=================================================== */
+
+h1 { 
+	font-family: Arial, Helvetica; 
+	font-size: 24px;
+	color: #505050;
+	font-weight: normal;
+	
+	margin: 0 0 .5em;
+	background-image:url(../images/header_bg.png);
+	background-repeat:no-repeat;
+	
+	padding-left: 30px;
+	padding-top: 10px;
+	
+	width: 670px; /*704px*/
+	height: 40px;
+	float: left;
+	
+}
+
+
+
+h1 img { display: none; } /* hide for screen. Show for printing in print.css */
+
+h2, h3, h4, h5, h6 {
+	margin: 0 0 .5em;
+}
+
+h2 { 
+	font-family: Arial, Helvetica; 
+	font-size: 16px;
+	color: #5a5b5e;
+	font-weight: bold;
+	margin-bottom: -10px;
+}
+
+
+h3 { 
+	font-family: Arial, Helvetica; 
+	font-size: 18px;
+	color: #5a5b5e;
+	font-weight: bold;
+	margin-bottom: -5px;
+	border-bottom: 1px #b5b5b5 solid;
+}
+
+h4 { 
+	font-family: Arial, Helvetica; 
+	font-size: 16px;
+	color: #134a85;
+	font-weight: bold;
+	line-height: normal;
+}
+
+/* @group LAYOUT
+=================================================== */
+#wrapper{
+	margin: auto;
+	width: 100%;
+	
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	
+}
+
+#bodyWrapper{
+	margin: 0 auto;
+	width: 960px;
+	
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+#homeWrapper{
+	padding-top: 30px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 40px;
+	width: 840px;
+	background-color: #202020;
+	clear:both;
+	
+}
+
+#columnWrapper{
+	margin: 0;
+	width: 920px;
+	
+	padding-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+	clear: both;
+	float:left;
+
+}
+
+#columnLeft{
+	width: 700px;
+	float: left;
+	padding-bottom: 40px;
+
+	border-top: #b5b5b5 solid 1px;
+	border-left: #b5b5b5 solid 1px;
+	border-right: #b5b5b5 solid 1px;
+	border-bottom: #b5b5b5 solid 1px;
+}
+
+#flashClients{
+	margin-top: -20px;
+	margin-left: -40px;
+}
+
+
+
+#secondaryContent{
+	width: 620px;
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px
+}
+
+
+#columnRight{
+	margin-top: -63px;
+	width: 200px;
+	float: right;
+}
+
+#firmProfile{
+	background-image:url(../images/firm_profile.png);
+	background-repeat:no-repeat;
+	width: 180px;
+	height: 144px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	float:left;
+}
+
+#pdfIcon{	
+	background-image:url(../images/pdf_icon.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	padding-top: 10px;
+	margin-top: 4px;
+	/*float:right;*/
+	height: 20px;
+	cursor:pointer;
+}
+
+#sideTop{
+	background-image:url(../images/side_top.png);
+	background-repeat:no-repeat;
+	width: 200px;
+
+	height: 10px;
+	clear:both;
+}
+
+#sideMid{
+	background-image:url(../images/side_mid.png);
+	background-repeat:no-repeat;
+	width: 180px;
+	padding-left: 10px;
+	padding-right: 10px;
+	min-height: 400px;
+	height: auto !important;
+	height: 400px;
+	clear:both;
+}
+
+#sideBtm{
+	background-image:url(../images/side_btm.png);
+	background-repeat:no-repeat;
+	width: 200px;
+	height: 10px;
+	clear:both;
+}
+
+#logoHome{
+	background-image:url(../images/logo_home.png);
+	background-repeat:no-repeat;
+	height: 89px;
+	width: 400px;
+	margin-bottom: 30px;
+	cursor:pointer;
+	clear:both;
+}
+#logoSm{
+	background-image:url(../images/logo_sm.png);
+	background-repeat:no-repeat;
+	margin-left: 30px;
+	margin-top: 5px;
+	height: 44px;
+	width: 222px;
+	float:left;
+	cursor:pointer;
+	clear:both;
+	
+}
+
+#flashHeader{
+	width: 840px;
+	height: 266px;
+	margin-bottom: 40px;
+	/*background-image:url(../images/flash_header.jpg);
+	background-repeat:no-repeat;*/
+	clear:both;
+}
+
+#homeContent, #homeContent p{
+	width: 840px;
+	font-family: Helvetica, Arial; 
+	font-size: 18px; 
+	color: #9d9c9c; 
+	line-height: 24px;
+	font-weight: normal;
+	clear:both;
+}
+
+#footer{
+	font-family: Arial, Helvetica; 
+	font-size: 10px; 
+	color: #5a5b5e; 
+	line-height: normal;
+	font-weight: normal;
+	text-align: center;
+	
+	width: 840px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	clear:both;
+}
+
+#footer a, #footer a:link, #pdfIcon a, #pdfIcon a:link{
+	color: #5a5b5e;
+	text-decoration: none;
+}
+
+#footer a:hover, #pdfIcon a:hover{
+	color: #00a0c6;
+	text-decoration: underline;
+}
+
+#navWrapper{
+	margin: 0;
+	margin-top: 30px;
+	width: 960px;
+	height: 55px;
+	background-image:url(../images/nav_bg.gif);
+	background-repeat:repeat-x;
+	float:right;
+	clear:both;
+}
+
+#navPrimary {
+	
+	margin: 0;
+	list-style: none;
+	margin-left: 600px;	
+}
+
+#navPrimary li {
+	float: left;
+	margin: 0;
+}
+
+#navPrimary li.first {
+	border-left: #435888 solid 1px;
+}
+
+#navPrimary li a {
+	line-height: 4.6em;
+	text-decoration: none;
+	font-family: Helvetica; 
+	font-size: 12px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color: #999999;
+	
+	display: block;
+	padding: 0 .8em;
+	
+	border-right: #435888 solid 1px;
+}
+
+#navPrimary li a:hover,
+#navPrimary li:hover,
+#navPrimary li.sfhover {
+	color: #00a0c6;
+	text-decoration: none;
+}
+
+
+#navPrimary li.current a {
+	color: #00a0c6;
+}
+
+
+
+#subWrapper{
+	margin: 0;
+	width: 960px;
+	height: 24px;
+	background-image:url(../images/subnav_bg.gif);
+	background-repeat:repeat-x;
+	float:right;
+	clear:both;
+}
+
+#subnav {
+	
+	margin: 0;
+	list-style: none;
+	margin-left: 600px;	
+}
+
+#subnav li {
+	float: left;
+	margin: 0;
+}
+
+#subnav li.first {
+	border-left: #c8c8c8 solid 1px;
+}
+
+#subnav li a {
+	line-height: 2.4em;
+	text-decoration: none;
+	font-family: Helvetica; 
+	font-size: 10px;
+	font-weight:normal;
+	color: #5a5b5e;
+	
+	display: block;
+	padding: 0 .8em;
+	
+	border-right: #c8c8c8 solid 1px;
+}
+
+#subnav li a:hover,
+#subnav li:hover,
+#subnav li.sfhover {
+	color: #134a85;
+	text-decoration: none;
+}
+
+
+#subnav li.current a {
+	color: #134a85;
+}
+
+/* @group CLEARFIX
+=================================================== */
+
+/* Clearing floats without extra markup
+	Based on How To Clear Floats Without Structural Markup by PiE
+	[http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+
+.clearfix {
+	display: inline-block;
+	}
+
+* html .clearfix {
+	height: 1%;
+	}
+
+.clearfix {
+	display: block;
+	}
+
+/* @end CLEARFIX
+---------------------------------------------- */
