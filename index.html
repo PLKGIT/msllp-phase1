@@ -17,19 +17,30 @@
   <body>
     <div class="container" id="nav">
       <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler navbar-dark"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="">HOME<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="/pages/profile.html">FIRM PROFILE</a>
+            <a class="nav-item nav-link active" href=""
+              >HOME<span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" href="/pages/profile.html"
+              >FIRM PROFILE</a
+            >
             <a class="nav-item nav-link" href="/pages/clients.html">CLIENTS</a>
             <a class="nav-item nav-link" href="/pages/contact.html">CONTACT</a>
           </div>
         </div>
       </nav>
-      
     </div>
     <div class="container" id="main_home">
       <div class="container" id="main">
@@ -66,5 +77,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="assets/js/index.js"></script>
+
+    <script>
+      var arrImages = new Array(
+        "./assets/images/home1_header.png",
+        "./assets/images/home2_header.png",
+        "./assets/images/home3_header.png"
+      );
+      var index = 1;
+
+      function rotateImage() {
+        $("#myImage").fadeOut("fast", function () {
+          $(this).attr("src", arrImages[index]);
+          $(this).fadeIn("fast", function () {
+            if (index == arrImages.length - 1) {
+              index = 0;
+            } else {
+              index++;
+            }
+          });
+        });
+      }
+
+      $(document).ready(function () {
+        setInterval(rotateImage, 20000);
+      });
+    </script>
   </body>
 </html>

@@ -62,10 +62,10 @@ body {
     color: white;
     text-align: center;
     background-color:#015e99;
-    font-size: medium;
+    font-size: large;
     font-weight: 300;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
  }
