@@ -32,6 +32,8 @@ body {
     font-weight: 300;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     align-items: flex-end;
 }
 
@@ -64,6 +66,8 @@ body {
     font-weight: 300;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
  }
 
  #address {
