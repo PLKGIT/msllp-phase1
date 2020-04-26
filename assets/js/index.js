@@ -1,12 +1,98 @@
 $(document).ready(function () {
 
+    let arrClientPublic = ['Acer, Inc.',
+        'Accuray, Inc.',
+        'AOpen America, Inc.',
+        'Applied Materials, Inc.',
+        'Electronic Arts, Inc.',
+        'Facebook, Inc.',
+        'Gap, Inc.',
+        'Gymboree Corporation',
+        'HPEV, Inc.',
+        'KLA-Tencor Corporation',
+        'MiTAC International Corporation',
+        'MicroSystemation, AB',
+        'NetSuite, Inc.',
+        'Panasonic E.W.L of America, Inc.',
+        'Responsys, Inc.',
+        'Transcend Information, Inc'
+    ];
+    let arrClientPrivate = ['ABC Chauffeured Limousines',
+        'Academix Direct, Inc.',
+        'AIS Romaric Corporation',
+        'Allbusiness.com, Inc.',
+        'All Covered, Inc.',
+        'American National Bank and Trust Company',
+        'Biosearch Technologies',
+        'Celigo Technologies, LLC',
+        'Chen Yoshimura, LLP',
+        'CMA Business Credit Services, Inc.',
+        'Christ Episcopal Chirch',
+        'Cupertino Electric, Inc.',
+        'Digital Keystone, Inc.',
+        'Enabling Solutions, Inc.',
+        'Envivo, Inc.',
+        'Epicure Imports, Inc.',
+        'Funicello Fund',
+        'Fugitive Watch, Inc.',
+        'Hunter Technology Corp.',
+        'Iconix Biosciences, Inc.',
+        'Innovationship, LLC',
+        'IPVALUE Management, Inc.',
+        'KatanaMe, Inc.',
+        'Mid-Peninsula Animal Hospital',
+        'MiTAC Digital Corporation',
+        'MVP Performance Inst, LLC',
+        'NeoKismet, LLC',
+        'Nethra Imaging, Inc.',
+        'newScale, Inc.',
+        'Old Navy, LLC',
+        'Paul Ekman Group, LLC',
+        'Performance Gaines, LLC',
+        'Planet 9 Studios, Inc.',
+        'Purfresh, Inc.',
+        'Q5 Consulting, LLC',
+        'Quswami, Inc.',
+        'Rearden Commerce, Inc.',
+        'RedCannon Security, Inc.',
+        'REIGN Real Estate',
+        'Site of Care Systems, Inc.',
+        'Sunwater Solar, Inc.',
+        'Top Gun Ventures, LLC',
+        'UMAX Capital Corporation',
+        'VentureBeat, Inc.',
+        'Victron, Inc.',
+        'Western Forge & Flange Co.'
+    ];
+    let arrClientSolo = ['Mario Castellon, CPA',
+        'Jill Crowley, Trustee',
+        'Rob DeSantis',
+        'Vivek B. Dutta, Ph.D.',
+        'Paul Ekman, Ph.D.',
+        'Christopher Gaines',
+        'Conrad Guziewicz',
+        'Pam Horan',
+        'Mark Howitson',
+        'Hoyoung Huh, MD, Ph.D.',
+        'Gregory Jones',
+        'Glen Kaplan',
+        'Toby Lenk',
+        'Andrew Littlefield',
+        'David Meese',
+        'Jim Neel',
+        'Javier Rojas',
+        'Yano Rubinstein, Esq.',
+        'Tom Shea',
+        'Barry Shepard',
+        'David Stern'
+    ]
 
+function clients(){
+    for (i=0;i<arrClientPublic.length;i++){
+        $( "#public" ).append( "<li>" + arrClientPublic[i] + "<li>" );
+    }
+}
 
-
-
-
-
-
-
+clients();
 
 });

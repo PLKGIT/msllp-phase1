@@ -1,77 +1,118 @@
 * {
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html{
-	height: 100%;
+html {
+  height: 100%;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: x-large;
-    font-weight: 300;
-	height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  font-weight: 300;
+  height: 100%;
 }
 
-#main_home{
-    background-color: black;
-    color:white;
+#main_home {
+  background-color: black;
+  color: white;
 }
 
-#main_standard{
-    background-color: white;
-    color:black;
+#main_standard {
+  background-color: white;
+  color: black;
 }
 
-
-#nav{
-    background-color:#015e99;
-    font-size: large;
-    font-weight: 300;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    align-items: flex-end;
+#nav {
+  background-color: #015e99;
+  font-size: large;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
-#nav a{
-    color:white;
+#nav2 {
+  background-color: whitesmoke;
+  font-size: large;
+  font-weight: 300;
 }
 
-#nav a:hover{
-    color: powderblue;
-    transform: scale(1.1);
+#nav a {
+  color: white;
 }
 
-#nav a:active{
-    color:indigo;
+#nav2 a {
+  color: #015e99;
 }
 
+#nav a:hover {
+  color: powderblue;
+  transform: scale(1.1);
+}
 
-.nav-link.active{
-    font-weight: 600;
-    color: powderblue;
+#nav2 a:hover {
+  color: indigo;
+  transform: scale(1.1);
+}
+
+#nav a:active {
+  color: indigo;
+}
+
+#nav2 a:active {
+  color: indigo;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  color: powderblue;
+}
+
+#nav2 .nav-link.active {
+  font-weight: 600;
+  color: #015e99;
 }
 
 #footer {
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    background-color:#015e99;
-    font-size: large;
-    font-weight: 300;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
- }
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #015e99;
+  font-size: large;
+  font-weight: 300;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
 
- #address {
-    text-align: center;
-    font-size: medium;
-    font-weight: 400;
- }
+#address {
+  text-align: center;
+  font-size: medium;
+  font-weight: 400;
+}
+
+#public,
+#private,
+#solo {
+  column-count: 3;
+}
+
+.card-header {
+  background-color: #015e99;
+  color: white;
+}
+
+.profile {
+  font-size: larger;
+}
+
+.colorme{
+    color: #015e99;
+    font-weight: bold;
+}
