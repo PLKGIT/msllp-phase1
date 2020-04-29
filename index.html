@@ -48,7 +48,7 @@
         <p>
           <center>
             <img
-              id="myImage"
+              id="homeImages"
               src="./assets/images/home1_header.png"
               width="100%"
             />
@@ -76,30 +76,29 @@
     </p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="assets/js/index.js"></script>
 
     <script>
-      var arrImages = new Array(
-        "./assets/images/home1_header.png",
-        "./assets/images/home2_header.png",
-        "./assets/images/home3_header.png"
-      );
-      var index = 1;
-
-      function rotateImage() {
-        $("#myImage").fadeOut("fast", function () {
-          $(this).attr("src", arrImages[index]);
-          $(this).fadeIn("fast", function () {
-            if (index == arrImages.length - 1) {
-              index = 0;
-            } else {
-              index++;
-            }
-          });
-        });
-      }
-
       $(document).ready(function () {
+        let arrImages = new Array(
+          "./assets/images/home1_header.png",
+          "./assets/images/home2_header.png",
+          "./assets/images/home3_header.png"
+        );
+        let index = 1;
+
+        function rotateImage() {
+          $("#homeImages").fadeOut("fast", function () {
+            $(this).attr("src", arrImages[index]);
+            $(this).fadeIn("fast", function () {
+              if (index == arrImages.length - 1) {
+                index = 0;
+              } else {
+                index++;
+              }
+            });
+          });
+        }
+
         setInterval(rotateImage, 2000);
       });
     </script>
