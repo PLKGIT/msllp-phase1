@@ -9,5 +9,8 @@ Retool existing site and content.  Remove flash.  Make site mobile responsive.
 * 05/05/2020: Client approved the site for deployment.
 * 05/05/2020: Rebuilt site deployed to http://www.msllp.com.
 
+![](https://res.cloudinary.com/damplk/image/upload/v1588710769/portal/still_msllp_ynu8c6.png)
+![](https://res.cloudinary.com/damplk/image/upload/v1588710772/portal/01_msllp_rad8or.png)
+
 ## Phase 2
 Redesign the site and include new content.
