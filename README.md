@@ -12,11 +12,22 @@ Retool existing site and content.  Remove flash.  Make site mobile responsive.
 * 05/17/2020: Updated site deployed to http://www.msllp.com.
 * 05/20/2020: Updated README.md.
 
+### Home
 ![](https://res.cloudinary.com/damplk/image/upload/v1590041647/portal/msllp_home_zoafxa.png)
+
+### Firm Profile
 ![](https://res.cloudinary.com/damplk/image/upload/v1590041648/portal/msllp_profile_neobil.png)
+
+### Clients
 ![](https://res.cloudinary.com/damplk/image/upload/v1590041647/portal/msllp_clients_g1kbx6.png)
+
+### Contact
 ![](https://res.cloudinary.com/damplk/image/upload/v1590041648/portal/msllp_contact_wtlka0.png)
+
+### Views
 ![](https://res.cloudinary.com/damplk/image/upload/v1588710880/portal/msllp_yn3aob.gif)
+
+___
 
 ## Phase 2
 Redesign the site and include new content.
