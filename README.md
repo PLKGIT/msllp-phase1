@@ -11,6 +11,7 @@ Retool existing site and content.  Remove flash.  Make site mobile responsive.
 * 05/17/2020: Added client.html page with firm client logos.  Updated text justification on index and profile pages.  Updated images on profile and contact pages.
 * 05/17/2020: Updated site deployed to http://www.msllp.com.
 * 05/20/2020: Updated README.md.
+* 10/21/2020: Updated all .html pages with new firm address.  Updated README.md.
 
 ### Home
 ![](https://res.cloudinary.com/damplk/image/upload/v1590041647/portal/msllp_home_zoafxa.png)
